@@ -37,12 +37,14 @@
             this.spaceLabel = new System.Windows.Forms.Label();
             this.charLabel = new System.Windows.Forms.Label();
             this.dataTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.charTextBox);
             this.panel1.Controls.Add(this.reloadButton);
@@ -116,20 +118,32 @@
             // 
             // dataTextBox
             // 
+            this.dataTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.dataTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataTextBox.Location = new System.Drawing.Point(0, 0);
+            this.dataTextBox.Location = new System.Drawing.Point(3, 22);
             this.dataTextBox.Multiline = true;
             this.dataTextBox.Name = "dataTextBox";
             this.dataTextBox.ReadOnly = true;
-            this.dataTextBox.Size = new System.Drawing.Size(239, 444);
+            this.dataTextBox.Size = new System.Drawing.Size(233, 419);
             this.dataTextBox.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataTextBox);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(239, 444);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Data";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 444);
-            this.Controls.Add(this.dataTextBox);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(400, 400);
             this.Name = "Menu";
@@ -137,9 +151,12 @@
             this.Text = "Text Analyzer";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
         }
+
+        private System.Windows.Forms.GroupBox groupBox1;
 
         private System.Windows.Forms.Label label3;
 
