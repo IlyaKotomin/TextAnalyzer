@@ -2,6 +2,8 @@
 
 This is a simple text analyzer application built using C# and Windows Forms. It allows users to select a text file, analyze its contents, and display various statistics about the text.
 
+[<img src="Text Analyzer.png" width="300"/>](Screenshot)
+
 ## Features
 
 - **File Selection**: Users can select a text file using the file dialog.
@@ -21,14 +23,13 @@ This is a simple text analyzer application built using C# and Windows Forms. It 
 
 ## Installation
 
+Download [RELEASE](https://github.com/IlyaKotomin/TextAnalyzer/releases/tag/v1.0.0) and start `TextAnalyzer.exe`
+
+Or build project:
 1. Clone or download the repository.
 2. Open the project in Rider/Visual Studio or any C# IDE.
 3. Build the project to generate the executable file.
 4. Run the executable file to launch the application.
-
-## Contributions
-
-Contributions are welcome! If you have any suggestions, improvements, or feature requests, feel free to open an issue or create a pull request.
 
 ## License
 
