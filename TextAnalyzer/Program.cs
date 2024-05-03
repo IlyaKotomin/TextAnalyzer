@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TextAnalyzer
+namespace TextAnalyzer;
+
+internal static class Program
 {
-    internal static class Program
+    [STAThread]
+    public static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        private static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
-        }
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Menu());
     }
 }

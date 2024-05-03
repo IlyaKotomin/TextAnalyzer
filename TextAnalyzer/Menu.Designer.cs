@@ -30,13 +30,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.charTextBox = new System.Windows.Forms.TextBox();
             this.reloadButton = new System.Windows.Forms.Button();
             this.selectFileButton = new System.Windows.Forms.Button();
             this.spaceLabel = new System.Windows.Forms.Label();
             this.charLabel = new System.Windows.Forms.Label();
             this.dataTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(239, 444);
             this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label3.Location = new System.Drawing.Point(0, 299);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(239, 23);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Char to find:";
             // 
             // charTextBox
             // 
@@ -74,6 +83,7 @@
             this.reloadButton.TabIndex = 3;
             this.reloadButton.Text = "Reload";
             this.reloadButton.UseVisualStyleBackColor = true;
+            this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
             // 
             // selectFileButton
             // 
@@ -113,15 +123,6 @@
             this.dataTextBox.ReadOnly = true;
             this.dataTextBox.Size = new System.Drawing.Size(239, 444);
             this.dataTextBox.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label3.Location = new System.Drawing.Point(0, 299);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(239, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Char to find:";
             // 
             // Menu
             // 
